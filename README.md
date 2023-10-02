@@ -1,7 +1,9 @@
 # roadToCM
 
-notes to self:
-cut branch from develop, add changes, merge to develop
+##Git flow:
+*Cut new branch from develop
+*Add changes
+*Raise pull request to develop
 
-Todo:
-set up pipeline to merge develop to master
+##Todo:
+*Set up pipeline to merge develop to master
