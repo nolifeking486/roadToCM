@@ -1,0 +1,14 @@
+To count the total number of good segments in a range 
+a[l....r] such that a[l'....r'] is also good
+where l'>l and r'<r 
+So suppose our current ans includes all the good segments in l'..........r'
+but now we move to the right that is r and our current segment is good 
+so our ans will be increased by r-l'+1
+these are the number of new segments added to ans which are also good
+
+Codeforces edu:
+C. Number of Segments with Small Sum 
+D. Number of Segments with Big Sum
+	-Different variation, here if the smaller segment is good then all the bigger
+	segments are also good. So in such a case we add to ans n-r 
+	which means all the segments apart from current segment
