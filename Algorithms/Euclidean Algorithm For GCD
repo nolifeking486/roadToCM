@@ -1,0 +1,12 @@
+if g divides a and g divides b
+then g divides a-b also
+using this we can compute gcd as
+GCD(a,b) = GCD(a,a-b)
+or GCD(a,b) = GCD(a,a%b) since we can further reduce a-b by subtracting b as many times as possible
+
+Time Complexity: O(log(min(a,b)))
+
+PROPERTIES OF GCD;
+GCD(a,0) = a
+GCD(2a,2b) = 2 GCD(a,b)
+GCD(2a,b) = GCD(a,b)
