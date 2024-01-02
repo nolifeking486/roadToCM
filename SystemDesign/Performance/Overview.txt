@@ -8,7 +8,7 @@ How to identify performance problem?
 	- Reasons for queue buildup:
 		- inefficient slow processing
 		- serial resource access, eg. one thread at a time
-		- limited resourse capacity, eg. we are doing parallel processing but we have limited number of cpu cores
+		- limited resource capacity, eg. we are doing parallel processing but we have limited number of cpu cores
 
 ------------------------------------------------------------------------------------------------
 Types of requests:
