@@ -1,0 +1,17 @@
+reference: https://cp-algorithms.com/algebra/binary-exp.html
+
+we can calculate a^n in O(log(n)) instead on O(n)
+this is possible by the fact that a^b; when b is expressed in base 2 
+it will have ~log(b) digits
+and to get the result a^b we only need to multiply the powers of a where the bits are set 
+in b.
+
+eg; 3^13 = 3^8 * 3^4 * 3^1
+
+Some notes about snippet:
+b>>=1 is equivalent to b/=2 but using this we can also check for set bits
+b&1 means the bit is set and we need this power in result;
+
+Applications:
+Basically wherever we are doing multiplication operation multiple times we can consider applying 
+binary exponentiation

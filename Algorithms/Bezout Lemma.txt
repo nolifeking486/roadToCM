@@ -1,0 +1,7 @@
+If a and b are nonzero integers and d = gcd(a,b)
+Then there exist integers x and y such that:
+
+ax+by=d
+
+Also:
+d is the smallest positive integer that can be written as ax+by
