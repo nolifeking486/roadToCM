@@ -34,3 +34,32 @@ public:
         return ans;
     }
 };
+
+
+//better implementation
+class Solution {
+public:
+    vector<int> successfulPairs(vector<int>& spells, vector<int>& potions, long long success) {
+        sort(potions.begin(),potions.end());
+        vector<int>ans(spells.size(),0);
+
+        for(int i=0;i<spells.size();i++){
+            int l=0,r=potions.size(),mid=(l+r)/2;
+            while(l<r){
+                mid = (l+r)/2;
+                if((long long)spells[i]*potions[mid]<success){
+                    l=mid+1;
+                }else{
+                    r=mid;
+                }
+            }
+            if(l==potions.size()){
+                ans[i]=0;
+            }else{
+                ans[i]=potions.size()-l;
+            }
+        }
+        return ans;
+        
+    }
+};
